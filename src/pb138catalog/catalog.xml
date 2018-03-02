@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<katalog>
+    <predmet ID="IA014">
+        <nazev>Advanced Functional Programming</nazev>
+        <vyucujici typ="Přednášející">doc. Mgr. Jan Obdržálek, PhD.</vyucujici>
+        <rozsah>
+            <zkouska>2</zkouska>
+            <zapocet>0</zapocet>
+        </rozsah>
+        <jazyk>EN</jazyk>>
+    </predmet>
+    <predmet ID="PA151">
+        <nazev>Soudobé počítačové sítě</nazev>
+        <vyucujici typ="Přednášející">doc. Ing. Jan Staudek, CSc.</vyucujici>
+        <rozsah>
+            <zkouska>2</zkouska>
+            <zapocet>2</zapocet>
+        </rozsah>
+        <jazyk>CS</jazyk>>
+    </predmet>
+    <predmet ID="PV239">
+        <nazev>Vývoj aplikací pro mobilní platformy</nazev>
+        <vyucujici typ="Přednášející">doc. Ing. RNDr. Barbora Bühnová, Ph.D.</vyucujici>
+        <vyucujici typ="Přednášející">RNDr. Jaroslav Škrabálek</vyucujici>
+        <vyucujici typ="Cvičící">Bc. Martin Bojnanský</vyucujici>
+        <vyucujici typ="Cvičící">Mgr. Jakub Dubrovský</vyucujici>
+        <vyucujici typ="Cvičící">Bc. Marek Sedlák</vyucujici>
+        <vyucujici typ="Cvičící">Mgr. Jakub Turcovský </vyucujici>
+        <vyucujici typ="Cvičící">Bc. Radim Vaculík</vyucujici>
+        <rozsah>
+            <zkouska>2</zkouska>
+            <zapocet>2</zapocet>
+            <ukonceni>1</ukonceni>
+        </rozsah>
+        <jazyk>CS</jazyk>>
+    </predmet>
+    <predmet ID="PV248">
+        <nazev>Kurz jazyka Python</nazev>
+        <vyucujici typ="Přednášející">Mgr. Věroslav Kaplan, Ph.D.</vyucujici>
+        <vyucujici typ="Cvičící">RNDr. Petr Ročkai, Ph.D.</vyucujici>
+        <rozsah>
+            <zapocet>1</zapocet>
+            <ukonceni>1</ukonceni>
+        </rozsah>
+        <jazyk>CS</jazyk>>
+    </predmet>
+    <predmet ID="PB138">
+        <nazev>Moderní značkovací jazyky a jejich aplikace</nazev>
+        <vyucujici typ="Přednášející">doc. RNDr. Tomáš Pitner, Ph.D.</vyucujici>
+        <vyucujici typ="Přednášející">Mgr. Luděk Bártek, Ph.D.</vyucujici>
+        <vyucujici typ="Cvičící">RNDr. Adam Rambousek, Ph.D.</vyucujici>
+        <vyucujici typ="Cvičící">Bruno Rossi, PhD</vyucujici>
+        <rozsah>
+            <zkouska>2</zkouska>
+            <zapocet>1</zapocet>
+        </rozsah>
+        <jazyk>CS</jazyk>>
+    </predmet>
+</katalog>
