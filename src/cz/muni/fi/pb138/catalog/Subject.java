@@ -19,7 +19,7 @@ public class Subject {
     Subject(Element subjectElement) {
         element = subjectElement;
     }
-    
+
     public String getName() {
         String name = null;
         NodeList nl = element.getElementsByTagName("nazev");
@@ -28,5 +28,17 @@ public class Subject {
         }
         return name;
     }
-    
+
+    public String getId() {
+        String ID = element.getAttribute("ID");
+        return ID;
+    }
+
+    void setName(String newName) {
+        NodeList nl = element.getElementsByTagName("nazev");
+        if (nl != null && nl.getLength() != 0) {
+            nl.item(0).setTextContent(newName);
+        }
+    }
+
 }

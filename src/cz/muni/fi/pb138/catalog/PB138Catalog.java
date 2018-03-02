@@ -33,10 +33,17 @@ public class PB138Catalog {
 
     private static void doMyXMLTransformations(Document document) {
         Catalog catalog = new Catalog(document.getDocumentElement());
-        Subject[] subjects = catalog.getSubjects();
-        for (Subject subject : subjects) {
+
+        // list subjects        
+        for (Subject subject : catalog.getSubjects()) {
             System.out.println(subject.getName());
         }
+        
+        //rename subject
+        Subject mySubject = catalog.getSubjectById("PB138");
+        mySubject.setName("XML");
+        System.out.println(mySubject.getName());
+        
     }
 
 }

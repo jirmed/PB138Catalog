@@ -26,11 +26,22 @@ public class Catalog {
         if (nl != null) {
             result = new Subject[nl.getLength()];
             for (int i = 0; i < nl.getLength(); i++) {
-                result[i] = new Subject((Element)nl.item(i));
+                result[i] = new Subject((Element) nl.item(i));
             }
         }
         return result;
     }
-    
-    
+
+    Subject getSubjectById(String ID) {
+        Subject result = null;
+        Subject[] subjects = getSubjects();
+        for (Subject subject : subjects) {
+            if (subject.getId().equals(ID)) {
+                result = subject;
+                break;
+            }
+        }
+        return result;
+    }
+
 }

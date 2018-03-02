@@ -47,4 +47,13 @@ public class CatalogTest {
         assertThat(subjects.length, is(5));
     }
     
+        @Test
+    public void testGetSubjectById() {
+        Catalog catalog = new Catalog(catalogElement);
+        String ID = "PB138";
+        Subject subject = catalog.getSubjectById(ID);
+        assertThat(subject.getId(), is(ID));
+    }
+
+    
 }

@@ -23,15 +23,15 @@ import org.xml.sax.SAXException;
 public class SubjectTest {
 
     private Element subjectElement;
-    
+
     public SubjectTest() {
     }
-    
+
     @Before
     public void setUp() throws ParserConfigurationException, SAXException, IOException {
         DOMParser domParser = new DOMParser("files/catalog.xml", false, false);
         Document document = domParser.getDocument();
-        subjectElement = (Element)document.getElementsByTagName("predmet").item(0);
+        subjectElement = (Element) document.getElementsByTagName("predmet").item(0);
 
     }
 
@@ -50,6 +50,21 @@ public class SubjectTest {
         assertThat(subject.getName(), is("Advanced Functional Programming"));
     }
 
+    @Test
+    public void testGetId() {
+        Subject subject = new Subject(subjectElement);
+        String ID = subject.getId();
+        assertThat(ID, is("IA014"));
+    }
+
+    @Test
+    public void setName() {
+        Subject subject = new Subject(subjectElement);
+        String newName = "New Name";
+        subject.setName(newName);
+        assertThat(subject.getName(), is(newName));
+    }
     
     
+
 }
