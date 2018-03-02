@@ -34,10 +34,13 @@ public class Subject {
         return ID;
     }
 
-    void setName(String newName) {
+    void setName(String newName) throws NodeNotFound {
         NodeList nl = element.getElementsByTagName("nazev");
         if (nl != null && nl.getLength() != 0) {
             nl.item(0).setTextContent(newName);
+        }
+        else {
+            throw new NodeNotFound("Node name not found");
         }
     }
 

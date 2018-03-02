@@ -58,7 +58,7 @@ public class SubjectTest {
     }
 
     @Test
-    public void setName() {
+    public void setName() throws NodeNotFound {
         Subject subject = new Subject(subjectElement);
         String newName = "New Name";
         subject.setName(newName);

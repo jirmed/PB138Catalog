@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT katalog (predmet*)>
+<!ELEMENT predmet (nazev, vyucujici+, rozsah, jazyk)>
+<!ATTLIST predmet ID ID #REQUIRED>
+<!ELEMENT nazev (#PCDATA)>
+<!ELEMENT vyucujici (#PCDATA)>
+<!ATTLIST vyucujici typ CDATA "prednasejici">
+<!ELEMENT rozsah (zkouska?, zapocet?, ukonceni?)>
+<!ELEMENT zkouska (#PCDATA)>
+<!ELEMENT zapocet (#PCDATA)>
+<!ELEMENT ukonceni (#PCDATA)>
+<!ELEMENT jazyk (#PCDATA)>

@@ -6,6 +6,8 @@
 package cz.muni.fi.pb138.catalog;
 
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import org.w3c.dom.Document;
@@ -41,7 +43,11 @@ public class PB138Catalog {
         
         //rename subject
         Subject mySubject = catalog.getSubjectById("PB138");
-        mySubject.setName("XML");
+        try {
+            mySubject.setName("XML");
+        } catch (NodeNotFound ex) {
+            Logger.getLogger(PB138Catalog.class.getName()).log(Level.SEVERE, null, ex);
+        }
         System.out.println(mySubject.getName());
         
     }
